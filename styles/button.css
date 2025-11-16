@@ -1,0 +1,14 @@
+.button {
+    height: 2.5rem;
+    width: 89px;
+    border-radius: 8px;
+}
+    
+    & .assinar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--pink-dark);
+        font: var(--button);
+        color: var(--text-title);
+    }

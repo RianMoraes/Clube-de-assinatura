@@ -39,3 +39,33 @@
     --link: 600 0.875rem var(--ff-main);    
     --tag: 700 0.625rem var(--ff-main) uppercase;    
 }
+
+.desktop-only {
+    display: none;
+}
+
+
+.px-1 {
+    padding-inline: 1.25rem;
+}
+
+.px-2 {
+    padding-inline: 2rem;
+}
+
+@media (width >= 1440px) {
+    .desktop-only {
+        display: initial;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+    .px-1 {
+        padding-inline: 10rem;
+    }
+    
+    .px-2 {
+        padding-inline: 10rem;
+    }
+}
