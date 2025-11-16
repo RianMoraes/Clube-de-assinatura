@@ -27,11 +27,11 @@
     --title-sm: 700 2rem var(--ff-main);    
     --title-xs: 700 1rem var(--ff-main);    
     --subtitle: 600 2rem/2 var(--ff-main);    
-    --body-lg-reg: 600 1.25rem/1.4 var(--ff-main);    
+    --body-lg-reg: 400 1.25rem/1.4 var(--ff-main);    
     --body-lg-bold: 700 1.25rem/1.4 var(--ff-main);    
     --body-md-reg: 600 1rem/1.4 var(--ff-main);    
     --body-md-bold: 700 1rem/1.4 var(--ff-main);    
-    --body-sm-reg: 600 0.875rem/1.4 var(--ff-main);    
+    --body-sm-reg: 400 0.875rem/1.4 var(--ff-main);    
     --body-sm-bold: 700 0.875rem/1.4 var(--ff-main);    
     --body-xs-reg: 600 0.75rem/1.4 var(--ff-main);    
     --body-xs-bold: 700 0.75rem/1.4 var(--ff-main);    
