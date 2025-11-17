@@ -1,0 +1,77 @@
+.second {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    position: relative;
+    height: 251px;
+
+    & img[alt=a] {
+        position: absolute;
+        top: 2rem;
+        right: 74px;
+        margin-inline: auto;
+        width: 2.5rem;
+        height: 2.5rem;
+       rotate: 15deg;
+    }
+
+    & img[alt=b] {
+        position: absolute;
+        top: 170px;
+        right: 20px;
+        width: 2.5rem;
+        height: 2.5rem;
+        rotate: 15deg;
+    }
+
+    & img[alt=c] {
+        position: absolute;
+        top: 157px;
+        left: 44px;
+        width: 2rem;
+        height: 2rem;
+        rotate: -30deg;
+    }
+
+
+    & p {
+        margin: auto;
+        font: var(--body-md-reg);
+        text-align: center;
+    }
+}
+
+@media (width >=1440px) {
+    .second {
+        margin-top: 96px;
+        height: 400px;
+
+        & img[alt=a] {
+            top: 8.26px;
+            left: 0px;
+            width: 5.5rem;
+            height: 5.5rem;
+            rotate: 15deg;
+        }
+
+        & img[alt=b] {
+            top: 236px;
+            right: 118px;
+            width: 4.5rem;
+            height: 4.5rem;
+            rotate: -14deg;
+        }
+
+        & img[alt=c] {
+            top: 235px;
+            left: 153px;
+            width: 5rem;
+            height: 5rem;
+            rotate: 99deg;
+        }
+
+        & p {
+            font: var(--subtitle);
+        }
+    }
+}
