@@ -1,0 +1,230 @@
+.third {
+    /* height: 21px; */
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 104px;
+    /* text-align: center; */
+
+    & .mensal-kit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .875rem;
+        font: var(--body-md-bold);
+        padding-bottom: .5rem;
+
+        img[alt="estrela"] {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    & .surprise {
+        text-align: center;
+        font: var(--body-sm-reg);
+    }
+
+    & .animation-book {
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        padding-top: 64px;
+
+        & .anim-1 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            & span {
+                position: absolute;
+                left: 10%;
+                font: var(--tag);
+            }
+
+            &>img {
+                margin-top: 11px;
+                position: absolute;
+                left: 23%;
+                width: 58px;
+                height: 10px;
+            }
+        }
+
+        & .books {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            img[alt="livro"] {
+                width: 157px;
+                height: 207px;
+            }
+
+            img[alt="mark1"] {
+                position: absolute;
+                left: 61%;
+                top: -10%;
+                width: 58px;
+                height: 180px;
+                z-index: -1;
+                rotate: 11deg;
+            }
+
+            img[alt="mark2"] {
+                position: absolute;
+                left: 66%;
+                top: 4%;
+                width: 58px;
+                height: 180px;
+                z-index: -2;
+                rotate: 20deg;
+            }
+        }
+
+        & .anim-2 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            & span {
+                position: absolute;
+                left: 20%;
+                top: -150%;
+                font: var(--tag);
+            }
+
+            &>img[src*="linha"] {
+                margin-top: 11px;
+                position: relative;
+                left: -15%;
+                bottom: 105px;
+            }
+
+            & img[src*="pin"] {
+                position: relative;
+                right: 18%;
+                bottom: 50px;
+                width: 75px;
+                height: 75px;
+                rotate: -6deg;
+                z-index: -1;
+            }
+        }
+
+        & .anim-3 {
+            position: relative;
+
+            & span {
+                position: absolute;
+                right: 25%;
+                top: -70%;
+                font: var(--tag);
+            }
+
+            &>img[src*="linha"] {
+                position: relative;
+                left: 64%;
+                bottom: 100px;
+            }
+        }
+    }
+}
+
+@media (width >=1440px) {
+    .third {
+        margin-top: 235px;
+
+        & .mensal-kit {
+            font: var(--title-sm);
+            gap: 1.25rem;
+
+            img[alt="estrela"] {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        & .surprise {
+            font: var(--body-md-reg);
+        }
+
+        & .animation-book {
+            padding-top: 96px;
+
+            & .anim-1 {
+                & span {
+                    left: 200px;
+                    font: var(--body-md-reg);
+                }
+
+                &>img {
+                    left: 22%;
+                    top: 20px;
+                    width: 172px;
+                    height: 30px;
+                }
+            }
+
+            & .books {
+                img[alt="livro"] {
+                    width: 467px;
+                    height: 617px;
+                }
+
+                img[alt="mark1"] {
+                    left: 62%;
+                    top: -9%;
+                    width: 172px;
+                    height: 536px;
+                }
+
+                img[alt="mark2"] {
+                    left: 69%;
+                    top: 5%;
+                    width: 172px;
+                    height: 536px;
+                }
+            }
+
+            & .anim-2 {
+
+                /* position: absolute; */
+                & span {
+                    top: -282px;
+                    left: 250px;
+                    font: var(--body-md-reg);
+                }
+
+                &>img[alt="arroz"] {
+                    position: absolute;
+                    left: 21%;
+                    top: -99%;
+                }
+
+                &>img[src*="pin"] {
+                    right: 18%;
+                    bottom: 170px;
+                    rotate: -6deg;
+                    z-index: -1;
+                    width: 222px;
+                    height: 254px;
+                }
+            }
+
+            & .anim-3 {
+                & span {
+                    top: -182px;
+                    right: 355px;
+                    font: var(--body-md-reg);
+                }
+
+                &>img[alt="feijao"] {
+                    position: absolute;
+                    right: 305px;
+                    bottom: 190px;
+                }
+            }
+        }
+    }
+}

@@ -29,7 +29,7 @@
     --subtitle: 600 2rem/2 var(--ff-main);    
     --body-lg-reg: 400 1.25rem/1.4 var(--ff-main);    
     --body-lg-bold: 700 1.25rem/1.4 var(--ff-main);    
-    --body-md-reg: 600 1rem/1.4 var(--ff-main);    
+    --body-md-reg: 400 1rem/1.4 var(--ff-main);    
     --body-md-bold: 700 1rem/1.4 var(--ff-main);    
     --body-sm-reg: 400 0.875rem/1.4 var(--ff-main);    
     --body-sm-bold: 700 0.875rem/1.4 var(--ff-main);    
@@ -37,7 +37,7 @@
     --body-xs-bold: 700 0.75rem/1.4 var(--ff-main);    
     --button: 700 0.875rem var(--ff-main);    
     --link: 600 0.875rem var(--ff-main);    
-    --tag: 700 0.625rem var(--ff-main) uppercase;    
+    --tag: 600 0.625rem var(--ff-main);    
 }
 
 .desktop-only {
