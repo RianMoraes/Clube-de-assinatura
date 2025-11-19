@@ -1,10 +1,6 @@
 .third {
-    /* height: 21px; */
-    /* display: flex; */
     align-items: center;
-    /* justify-content: center; */
     margin-top: 104px;
-    /* text-align: center; */
 
     & .mensal-kit {
         display: flex;
@@ -26,10 +22,8 @@
     }
 
     & .animation-book {
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
         padding-top: 64px;
+        margin-bottom: 5.5rem;
 
         & .anim-1 {
             display: flex;
@@ -150,6 +144,7 @@
 
         & .animation-book {
             padding-top: 96px;
+            margin-bottom: 18.625rem;
 
             & .anim-1 {
                 & span {

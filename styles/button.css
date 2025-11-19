@@ -12,3 +12,14 @@
         font: var(--button);
         color: var(--text-title);
     }
+    & .mensal {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue-dark);
+        font: var(--button);
+        color: var(--text-title);
+        width: 100%;
+    }
+
