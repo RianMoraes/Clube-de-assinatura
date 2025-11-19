@@ -3,6 +3,7 @@
     position: relative;
     z-index: 0;
 
+
     & img[src*="hero-background"] {
         width: 100%;
         height: 464px;
