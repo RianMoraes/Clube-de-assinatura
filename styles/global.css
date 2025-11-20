@@ -70,6 +70,9 @@ strong {
     color: var(--blue-light);
 }
 
+a {
+    text-decoration: none;
+}
 @media (width >=1440px) {
     .desktop-only {
         display: initial;
