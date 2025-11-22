@@ -5,6 +5,39 @@
     position: relative;
     height: 251px;
 
+    span.anim {
+        opacity: .5;
+    }
+
+    &:hover .img,
+    &:hover .anim {
+        animation: appear 1s both;
+    }
+
+    &:hover .img:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    &:hover .img:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    &:hover .img:nth-child(3) {
+        animation-delay: 3s;
+    }
+
+    &:hover .anim:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    &:hover .anim:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    &:hover .anim:nth-child(3) {
+        animation-delay: 3s;
+    }
+
     & img[alt=a] {
         position: absolute;
         top: 2rem;
@@ -12,8 +45,10 @@
         margin-inline: auto;
         width: 2.5rem;
         height: 2.5rem;
-       rotate: 15deg;
+        rotate: 15deg;
+        opacity: 0;
     }
+
 
     & img[alt=b] {
         position: absolute;
@@ -22,6 +57,7 @@
         width: 2.5rem;
         height: 2.5rem;
         rotate: 15deg;
+        opacity: 0
     }
 
     & img[alt=c] {
@@ -31,6 +67,8 @@
         width: 2rem;
         height: 2rem;
         rotate: -30deg;
+        opacity: 0;
+
     }
 
 
@@ -38,6 +76,13 @@
         margin: auto;
         font: var(--body-md-reg);
         text-align: center;
+    }
+}
+
+@keyframes appear {
+    to {
+        transform: translateZ(0);
+        opacity: 1;
     }
 }
 
