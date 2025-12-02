@@ -91,7 +91,7 @@
                 width: 58px;
                 height: 180px;
                 z-index: -1;
-                transform: translateY(15px);
+                transform: translate(-15px, 2px);
                 /* transform: rotate(11deg); */
             }
 
@@ -103,7 +103,7 @@
                 height: 180px;
                 z-index: -2;
                 rotate: 20deg;
-                transform: translate(15px);
+                transform: translateY(10px);
             }
         }
 
@@ -159,7 +159,7 @@
 
 @keyframes showtl {
     0% {
-        transform: translateY(20px) translateX(145px);
+        transform: translateY(20px) translateX(80px);
     }
 
     100% {
@@ -169,11 +169,11 @@
 
 @keyframes showtr {
     0% {
-        transform: translateY(15px) translateX(0px);
+        transform: translateY(-15px) translateX(0px);
     }
 
     100% {
-        transform: translateY(-20%) rotate(11deg) translateX(90px);
+        transform: translateY(-20%) rotate(11deg) translateX(100px);
     }
 }
 @keyframes showtrmark2 {
@@ -229,6 +229,26 @@
         & .animation-book {
             padding-top: 96px;
             margin-bottom: 18.625rem;
+        
+
+        &:hover .anim-1 {
+            animation: showtlDesktop .5s both;
+        }
+
+        &:hover img[alt="mark1"] {
+            animation: showmark1Desktop .5s both;
+        }
+
+        &:hover img[alt="mark2"] {
+            animation: showmark2Desktop .5s both;
+        }
+
+        &:hover .anim-3 {
+            animation: showllDesktop .5s both;
+        }
+        &:hover .anim-2 {
+            animation: showanim2Desktop .5s both;
+        }
 
             & .anim-1 {
                 transform: translate(330px, 25px);
@@ -311,7 +331,7 @@
         }
     }
 }
-@keyframes showtl {
+@keyframes showtlDesktop {
     0% {
         transform: translateY(20px) translateX(330px);
     }
@@ -320,8 +340,7 @@
         transform: translateY(0px) translateX(0px);
     }
 }
-
-@keyframes showtr {
+@keyframes showmark1Desktop {
     0% {
         transform: translateY(15px) translateX(0px);
     }
@@ -330,7 +349,7 @@
         transform: translateY(-30%) rotate(11deg) translateX(270px);
     }
 }
-@keyframes showtrmark2 {
+@keyframes showmark2Desktop {
     0% {
         transform: translateY(0px) translateX(0px);
     }
@@ -339,8 +358,7 @@
         transform: translateY(-25%) rotate(3deg) translateX(345px);
     }
 }
-
-@keyframes showll {
+@keyframes showllDesktop {
     0% {
         transform: translateY(-100px) translateX(-150px);
     }
@@ -349,8 +367,7 @@
         transform: translateY(10px) translateX(30px);
     }
 }
-
-@keyframes showanim2 {
+@keyframes showanim2Desktop {
     0% {
         transform: translateY(-90px) translateX(250px);
     }
