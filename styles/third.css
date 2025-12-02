@@ -1,7 +1,7 @@
 .third {
     align-items: center;
     margin-top: 104px;
-
+    overflow: hidden;
     & .mensal-kit {
         display: flex;
         align-items: center;
