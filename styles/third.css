@@ -29,8 +29,15 @@
             animation: showtl .5s both;
         }
 
+        &:not(:hover) .anim-1 {
+            animation: saidaOne .5s both;
+        }
+
         &:hover img[alt="mark1"] {
             animation: showtr .5s both;
+        }
+        &:not(:hover) img[alt="mark1"], &:not(:hover) img[alt="mark2"] {
+            animation: saidaTwo .5s both;
         }
 
         &:hover img[alt="mark2"] {
@@ -40,8 +47,14 @@
         &:hover .anim-3 {
             animation: showll .5s both;
         }
+        &:not(:hover) .anim-3 {
+            animation: saidaThree .5s both;
+        }
         &:hover .anim-2 {
             animation: showanim2 .5s both;
+        }
+        &:not(:hover) .anim-2 {
+            animation: saidaFour .5s both;
         }
         
 
@@ -61,7 +74,7 @@
 
             & span {
                 position: absolute;
-                left: 5%;
+                left: 19%;
                 font: var(--tag);
             }
 
@@ -111,7 +124,7 @@
             display: flex;
             justify-content: center;
             position: relative;
-            transform: translate(110px, -50px);
+            /* transform: translate(180px, -90px); */
             z-index: -1;
             & span {
                 position: absolute;
@@ -163,7 +176,7 @@
     }
 
     100% {
-        transform: translateY(0px) translateX(0px);
+        transform: translateY(-10px) translateX(-10px);
     }
 }
 
@@ -198,11 +211,47 @@
 
 @keyframes showanim2 {
     0% {
-        transform: translateY(-20px) translateX(50px);
+        transform: translateY(-20px) translateX(90px);
     }
 
     100% {
         transform: translateY(10px) translateX(-10px);
+    }
+}
+
+@keyframes saidaOne {
+    from {
+        transform: translateY(0px) translateX(0px);
+    }
+    to {
+        transform: translateY(20px) translateX(80px);
+    }
+}
+
+@keyframes saidaTwo {
+    from {
+        transform: translateY(-18%) rotate(11deg) translateX(100px);
+    }
+    to {
+        transform: translateY(10px) translateX(0px);
+    }
+}
+
+@keyframes saidaThree {
+    from {
+        transform: translateY(10px) translateX(0);
+    }
+    to {
+        transform: translateY(-100px) translateX(-35px);
+    }
+}
+
+@keyframes saidaFour {
+    from {
+        transform: translateY(10px) translateX(-10px);
+    }
+    to {
+        transform: translateY(-20px) translateX(50px);
     }
 }
 
@@ -330,6 +379,44 @@
             }
         }
     }
+
+@keyframes saidaOne {
+    from {
+        transform: translateY(0px) translateX(0px);
+    }
+    to {
+        transform: translateY(20px) translateX(350px);
+    }
+}
+
+@keyframes saidaTwo {
+    from {
+        transform: translateY(-18%) rotate(11deg) translateX(100px);
+    }
+    to {
+        transform: translateY(30px) translateX(0px);
+    }
+}
+
+@keyframes saidaThree {
+    from {
+        transform: translateY(10px) translateX(0);
+    }
+    to {
+        transform: translateY(-200px) translateX(-250px);
+    }
+}
+
+@keyframes saidaFour {
+    from {
+        transform: translateY(10px) translateX(-10px);
+    }
+    to {
+        transform: translateY(-60px) translateX(350px);
+    }
+}
+
+
 }
 @keyframes showtlDesktop {
     0% {
