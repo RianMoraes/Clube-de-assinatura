@@ -391,7 +391,7 @@
 
 @keyframes saidaTwo {
     from {
-        transform: translateY(-18%) rotate(11deg) translateX(100px);
+        transform: translateY(-27%) rotate(11deg) translateX(290px);
     }
     to {
         transform: translateY(30px) translateX(0px);
